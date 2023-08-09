@@ -15,7 +15,7 @@ const Main = () => {
 
 
   return (
-    <div>Main </div>
+    <div>M </div>
   )
 }
 
