@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
+import styles from "./Nevbar.module.css";
 
 const Nevbar = () => {
   const { user, logOut } = UserAuth();
@@ -19,13 +20,19 @@ const Nevbar = () => {
     <div className="flex items-center justify-between p-4 z-[100] w-full absolute">
       <Link to="/">
         <h1 className="text-red-600 text-4xl font-bold cursor-pointer">
-          NETFLIX
+          NETCRACK
         </h1>
       </Link>
+
       {user?.email ? (
         <div>
+          <Link to="/fmovies">
+           <button className={styles.button}>
+            <span>Watch</span>
+          </button>
+          </Link>
           <Link to="/account">
-            <button className="text-white pr-4">Account</button>
+            <button className="text-white pr-6 pl-6">Account</button>
           </Link>
 
           <button
@@ -34,7 +41,9 @@ const Nevbar = () => {
           >
             Logout
           </button>
+         
         </div>
+
       ) : (
         <div>
           <Link to="/login">

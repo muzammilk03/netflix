@@ -47,7 +47,7 @@ const handleSubmit = async (e)=>{
                 <input
                 onChange={(e)=> setPassword(e.target.value)}
                   className="p-3 my-2 bg-gray-700 rounded"
-                  type="password "
+                  type="password"
                   placeholder="Password"
                   autoComplete="current-password"
                 />
