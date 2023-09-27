@@ -8,6 +8,7 @@ import Account from "./Pages/Account";
 import Signup from "./Pages/Signup";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Fmovies from "./Pages/Fmovies";
+import Sports from "./Pages/Sports";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/account" element={<ProtectedRoute><Account /></ProtectedRoute>} />
           <Route path="/fmovies" element={<Fmovies />} />
-        </Routes>
+          <Route path="/sports" element={<Sports/>}/>     
+          </Routes>
       </AuthContextProvider>
     </>
   );

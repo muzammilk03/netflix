@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
 import styles from "./Nevbar.module.css";
 
+
 const Nevbar = () => {
   const { user, logOut } = UserAuth();
   const navigate = useNavigate();
@@ -25,12 +26,24 @@ const Nevbar = () => {
       </Link>
 
       {user?.email ? (
+        
+          
+        
         <div>
+           <Link to="/sports">
+           <button className={`${styles.button} ${styles.buttonWithGap}`}>
+            <span>Sports</span>
+          </button>
+           </Link>
+
+          
           <Link to="/fmovies">
-           <button className={styles.button}>
-            <span>Watch</span>
+          <button className={styles.button} >
+
+            <span>Movie</span>
           </button>
           </Link>
+          
           <Link to="/account">
             <button className="text-white pr-6 pl-6">Account</button>
           </Link>
@@ -41,6 +54,9 @@ const Nevbar = () => {
           >
             Logout
           </button>
+          
+        
+      
          
         </div>
 

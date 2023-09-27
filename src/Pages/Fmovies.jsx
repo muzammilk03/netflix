@@ -22,7 +22,7 @@ const Fmovies = () => {
           <div className="flex justify-center mt-8 space-x-6 pl-96 ">
             <button className="btn" onClick={openFmovies}>F Movies</button>
             <button className="btn" onClick={openAnymovies}>Any Movies</button>
-        
+            
           </div>
         </div>
       </div>
