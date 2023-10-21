@@ -12,7 +12,7 @@ const Fmovies = () => {
     <>
       <div className="w-full text-white">
         <img
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover flex-auto "
           src="https://img.freepik.com/free-vector/sport-equipment-concept_1284-13034.jpg?w=740&t=st=1695800480~exp=1695801080~hmac=d53f7728f58343b748e474e4f42447742b70ccf932027fb67ce45807cf7e0e71"
           alt="/"
         />
